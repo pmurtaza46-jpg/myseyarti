@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="My Sayartee - Mobile Tire Change, Battery & Repair Service in Kuwait. We reach you in minutes.">
+    <title>My Sayartee | 24/7 Mobile Car Service Kuwait</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css?v=4">
+    <!-- Tailwind CSS (No Preflight) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: { preflight: false }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="sticky top-0 z-50 bg-[#FFFFFF] border-b border-gray-100 px-6 h-16 p-0 m-0 flex items-center">
+        <div class="max-w-7xl mx-auto w-full flex items-center justify-between h-full py-0">
+
+            <!-- Left Side (Logo) -->
+            <div class="flex flex-1 justify-start items-center h-full">
+                <img src="mysayartee mobile car service logo.jpeg" alt="My Sayartee Logo"
+                    class="h-16 w-auto mix-blend-multiply block">
+            </div>
+
+            <!-- Center (Navigation Links) -->
+            <div class="hidden md:flex justify-center items-center space-x-8 rtl:space-x-reverse">
+                <a href="#services" class="text-[#1D1D1F] font-medium hover:text-[#D92128] transition-colors"
+                    data-i18n="nav.services">Services</a>
+                <a href="#areas-we-serve" class="text-[#1D1D1F] font-medium hover:text-[#D92128] transition-colors"
+                    data-i18n="nav.coverage_area">Coverage Area</a>
+                <a href="#faq" class="text-[#1D1D1F] font-medium hover:text-[#D92128] transition-colors"
+                    data-i18n="nav.faqs">FAQs</a>
+                <a href="#our-story" class="text-[#1D1D1F] font-medium hover:text-[#D92128] transition-colors"
+                    data-i18n="nav.our_story">Our Story</a>
+                <a href="#blogs" class="text-[#1D1D1F] font-medium hover:text-[#D92128] transition-colors"
+                    data-i18n="nav.blogs">Blogs</a>
+            </div>
+
+            <!-- Right Side (Actions) -->
+            <div class="flex flex-1 justify-end items-center space-x-6 rtl:space-x-reverse">
+                <!-- Language Toggle -->
+                <button id="langToggle"
+                    class="text-gray-500 font-bold hover:text-gray-900 transition-colors uppercase cursor-pointer bg-transparent border-none p-0 inline-block focus:outline-none">AR</button>
+
+                <!-- Call Now CTA -->
+                <a href="tel:+96560992569"
+                    class="bg-[#D92128] hover:bg-[#b01b21] text-white font-medium py-2.5 px-6 rounded-full transition-colors whitespace-nowrap"
+                    data-i18n="nav.cta_call">Call Now</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-[85vh] min-h-[600px] flex items-center mt-[-64px] pt-[64px]">
+        <!-- Background Image -->
+        <img src="mySayartee van image.png" alt="mysayartee 24/7 emergency service van"
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Subtle dark overlay for the whole image -->
+        <div class="absolute inset-0 bg-black/20"></div>
+
+        <!-- Content Container -->
+        <div class="container mx-auto px-6 relative z-10 w-full">
+
+            <!-- Hero Content -->
+            <div
+                class="max-w-2xl mr-auto ml-0 rtl:mr-0 rtl:ml-auto bg-transparent p-10 md:p-12 text-left rtl:text-right">
+
+                <!-- Eyebrow -->
+                <div class="inline-block text-[#D92128] text-sm font-bold tracking-wide mb-6 drop-shadow-md"
+                    data-i18n="hero.badge">Reliable. Fast. Professional.</div>
+
+                <!-- Headline -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-xl"
+                    data-i18n="hero.headline">24/7 Emergency Availability</h1>
+
+                <!-- Review Badge -->
+                <div class="flex items-center space-x-3 rtl:space-x-reverse mb-10 text-white/90">
+                    <svg class="w-6 h-6 text-[#FFD700] fill-current drop-shadow-sm" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                        </path>
+                    </svg>
+                    <span class="text-lg md:text-xl font-medium drop-shadow-sm" data-i18n="hero.subheadline">4.8/5
+                        Customer rating from 1,400+ reviews</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-start">
+                    <a href="tel:+96560992569"
+                        class="inline-flex justify-center items-center bg-[#D92128] hover:bg-[#b01b21] hover:scale-[1.02] active:scale-95 text-white font-medium py-3.5 px-8 rounded-full transition-all text-lg whitespace-nowrap shadow-lg"
+                        data-i18n="hero.cta_call">Call: +965 6099 2569</a>
+                    <a href="https://wa.me/96560992569" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex justify-center items-center bg-transparent hover:bg-[#25D366]/10 hover:scale-[1.02] active:scale-95 border-2 border-solid border-[#25D366] text-[#25D366] font-medium py-3.5 px-8 rounded-full transition-all text-lg whitespace-nowrap shadow-sm"
+                        data-i18n="hero.cta_whatsapp">Chat on WhatsApp</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white">
+        <div class="container text-center">
+            <h2 class="section-title text-[#D92128]" data-i18n="services.main_title">Our Services</h2>
+            <p class="section-subtitle" data-i18n="services.main_subtitle">Premium auto care delivered directly to your
+                location. Fast, reliable, and convenient.</p>
+
+            <div class="segmented-control-wrapper">
+                <div class="segmented-control">
+                    <div class="segment-indicator" id="segmentIndicator"></div>
+                    <button class="segment-btn active" id="btn-emergency" data-i18n="services.toggle.emergency">🚨
+                        Emergency Rescue</button>
+                    <button class="segment-btn" id="btn-maintenance" data-i18n="services.toggle.maintenance">🛠️ Mobile
+                        Maintenance</button>
+                </div>
+            </div>
+
+            <!-- Emergency Rescue Grid (Default View) -->
+            <div id="grid-emergency" class="grid-services active-grid">
+                <!-- Towing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M2 17H5V8l3-2h3v11"></path>
+                            <path d="M5 8v4h3"></path>
+                            <path d="M11 15l11-3v1"></path>
+                            <path d="M13 11h6l1.5 1.5v1.5h-9v-1.5L13 11z"></path>
+                            <path d="M14.5 11v-2h3v2"></path>
+                            <circle cx="6" cy="17" r="2"></circle>
+                            <circle cx="12" cy="17" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.emergency.towing.title">Towing</h3>
+                        <p data-i18n="services.emergency.towing.desc">Safe, immediate flatbed towing to your preferred
+                            garage.</p>
+                    </div>
+                    <button class="btn btn-card-primary w-100 mt-auto" data-i18n="services.emergency.cta">Dispatch
+                        Now</button>
+                </div>
+                <!-- Fuel Delivery -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="5" y="8" width="14" height="14" rx="2"></rect>
+                            <path d="M8 8V5c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2v3"></path>
+                            <path d="M12 3v5"></path>
+                            <path d="M5 10l-2-3 2-1"></path>
+                            <path d="M8 12l8 8"></path>
+                            <path d="M16 12l-8 8"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.emergency.fuel.title">Fuel Delivery</h3>
+                        <p data-i18n="services.emergency.fuel.desc">Stranded on empty? We’ll bring premium fuel directly
+                            to your coordinates.</p>
+                    </div>
+                    <button class="btn btn-card-primary w-100 mt-auto" data-i18n="services.emergency.cta">Dispatch
+                        Now</button>
+                </div>
+                <!-- Jump Start -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 21C5 17 2 15 2 12l4-8 4 8c0 3-3 5-3 9"></path>
+                            <path d="M4 10h4"></path>
+                            <path d="M4 6h2"></path>
+                            <path d="M19 21c0-4 3-6 3-9l-4-8-4 8c0 3 3 5 3 9"></path>
+                            <path d="M16 10h4"></path>
+                            <path d="M18 6h2"></path>
+                            <rect x="5" y="2" width="2" height="4"></rect>
+                            <rect x="17" y="2" width="2" height="4"></rect>
+                            <path d="M5 1v1M4 2h2"></path>
+                            <path d="M17 2h2"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.emergency.jumpstart.title">Jump Start</h3>
+                        <p data-i18n="services.emergency.jumpstart.desc">Dead battery? We'll get your engine running
+                            safely in minutes.</p>
+                    </div>
+                    <button class="btn btn-card-primary w-100 mt-auto" data-i18n="services.emergency.cta">Dispatch
+                        Now</button>
+                </div>
+                <!-- Car Unlock -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 22V10l4-8h8s4 2.5 5 8v12H4z"></path>
+                            <path d="M4 10h17"></path>
+                            <path d="M14 2v8"></path>
+                            <rect x="7" y="13" width="4" height="1.5" rx="0.5"></rect>
+                            <circle cx="8" cy="15.5" r="1.5"></circle>
+                            <path d="M8 14v-1"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.emergency.unlock.title">Car Unlock</h3>
+                        <p data-i18n="services.emergency.unlock.desc">Keys locked inside? Damage-free entry to get you
+                            back in the driver's seat.</p>
+                    </div>
+                    <button class="btn btn-card-primary w-100 mt-auto" data-i18n="services.emergency.cta">Dispatch
+                        Now</button>
+                </div>
+                <!-- Flat Tire -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18.3 19A9.9 9.9 0 1 0 5.7 19H18.3z"></path>
+                            <circle cx="12" cy="11" r="5"></circle>
+                            <circle cx="12" cy="11" r="1.5"></circle>
+                            <path d="M12 6v3.5"></path>
+                            <path d="M12 16v-1.5"></path>
+                            <path d="M7 11h3.5"></path>
+                            <path d="M17 11h-3.5"></path>
+                            <path d="M7 19v-2"></path>
+                            <path d="M17 19v-2"></path>
+                            <path d="M4 16l1.5 1"></path>
+                            <path d="M20 16l-1.5 1"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.emergency.tire.title">Flat Tire</h3>
+                        <p data-i18n="services.emergency.tire.desc">Quick patching or full replacement right where you
+                            are.</p>
+                    </div>
+                    <button class="btn btn-card-primary w-100 mt-auto" data-i18n="services.emergency.cta">Dispatch
+                        Now</button>
+                </div>
+            </div>
+
+            <!-- Mobile Maintenance Grid (Secondary View) -->
+            <div id="grid-maintenance" class="grid-services hidden-grid" style="display: none;">
+                <!-- AC Refrigerant & Compressor -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="6" y="6" width="12" height="12" rx="3"></rect>
+                            <line x1="10" y1="6" x2="10" y2="18"></line>
+                            <line x1="14" y1="6" x2="14" y2="18"></line>
+                            <path d="M6 8H4v8h2"></path>
+                            <line x1="2" y1="7" x2="2" y2="17"></line>
+                            <path d="M10 6V3c0-1.1 1-2 2-2h6"></path>
+                            <path d="M14 18v3c0 1.1-1 2-2 2H6"></path>
+                            <line x1="9" y1="4" x2="11" y2="4"></line>
+                            <line x1="13" y1="20" x2="15" y2="20"></line>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.maintenance.ac.title">AC Refrigerant & Compressor</h3>
+                        <p data-i18n="services.maintenance.ac.desc">Beat the heat. On-site Freon refills and AC repair.
+                        </p>
+                    </div>
+                    <button class="btn btn-card-ghost w-100 mt-auto" data-i18n="services.maintenance.cta">Book an
+                        Appointment</button>
+                </div>
+                <!-- Oil Change -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="16" cy="5" r="3"></circle>
+                            <line x1="14" y1="7.5" x2="6" y2="16"></line>
+                            <line x1="10" y1="11.5" x2="8.5" y2="13"></line>
+                            <path d="M6 16c-.7 1-2 2-2 3.5a2.5 2.5 0 0 0 5 0c0-1.5-1.3-2.5-2-3.5l-1-1z"></path>
+                            <path d="M19 12L13 18v6"></path>
+                            <path d="M21 14l-6 6v4"></path>
+                            <path d="M13 18h6"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.maintenance.oil.title">Oil Change</h3>
+                        <p data-i18n="services.maintenance.oil.desc">Premium oil checks and multi-point inspections in
+                            your driveway.</p>
+                    </div>
+                    <button class="btn btn-card-ghost w-100 mt-auto" data-i18n="services.maintenance.cta">Book an
+                        Appointment</button>
+                </div>
+                <!-- Brake Pads & Discs -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="12" y1="5" x2="15" y2="8"></line>
+                            <line x1="19" y1="12" x2="16" y2="15"></line>
+                            <line x1="12" y1="19" x2="9" y2="16"></line>
+                            <line x1="5" y1="12" x2="8" y2="9"></line>
+                            <path d="M2 9v6a2 2 0 0 0 2 2h3c1 0 2-1 2-2v-6c0-1-1-2-2-2H4a2 2 0 0 0-2 2z"></path>
+                            <path d="M5 7v10"></path>
+                            <path d="M9 10v4"></path>
+                            <circle cx="12" cy="10.5" r="0.5"></circle>
+                            <circle cx="13.5" cy="12" r="0.5"></circle>
+                            <circle cx="12" cy="13.5" r="0.5"></circle>
+                            <circle cx="10.5" cy="12" r="0.5"></circle>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.maintenance.brakes.title">Brake Pads & Discs</h3>
+                        <p data-i18n="services.maintenance.brakes.desc">Squeaking brakes? Professional replacement at
+                            your location.</p>
+                    </div>
+                    <button class="btn btn-card-ghost w-100 mt-auto" data-i18n="services.maintenance.cta">Book an
+                        Appointment</button>
+                </div>
+                <!-- Battery Replacement -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="10" width="18" height="11" rx="1"></rect>
+                            <line x1="7" y1="10" x2="7" y2="21"></line>
+                            <line x1="11" y1="10" x2="11" y2="21"></line>
+                            <line x1="15" y1="10" x2="15" y2="21"></line>
+                            <path d="M5 10V7h4v3"></path>
+                            <path d="M15 10V7h4v3"></path>
+                            <rect x="6" y="5" width="2" height="2"></rect>
+                            <rect x="16" y="5" width="2" height="2"></rect>
+                            <path d="M6 13h2M7 12v2"></path>
+                            <path d="M16 13h2"></path>
+                            <path d="M9 7V4h6v3"></path>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h3 data-i18n="services.maintenance.battery.title">Battery Replacement</h3>
+                        <p data-i18n="services.maintenance.battery.desc">Testing and installation of brand-new,
+                            warranted batteries.</p>
+                    </div>
+                    <button class="btn btn-card-ghost w-100 mt-auto" data-i18n="services.maintenance.cta">Book an
+                        Appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas We Serve Section -->
+    <section id="areas-we-serve" class="bg-[#FFFFFF] pb-16 md:pb-24" style="padding-top: 2rem; margin-top: 0;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+                <!-- Left Column (Text) -->
+                <div class="flex flex-col text-left rtl:text-right">
+                    <span class="eyebrow" data-i18n="areas.eyebrow">RAPID DISPATCH</span>
+                    <h2 class="text-[#1D1D1F] text-2xl md:text-3xl font-bold leading-tight mb-6"
+                        data-i18n="areas.heading">Wherever you are in Kuwait, we are already on our way</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed" data-i18n="areas.paragraph">Our mobile fleet is
+                        strategically stationed across all six governorates to ensure ultra-fast response times. Whether
+                        you are at home, at the office, or stranded on the highway, premium auto care is just a click
+                        away.</p>
+                </div>
+
+                <!-- Right Column (Map Placeholder & Locations) -->
+                <div
+                    class="bg-gray-50 rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col text-left rtl:text-right">
+
+                    <!-- THE MAP -->
+                    <div class="mb-8 flex justify-center w-full">
+                        <img src="kuwait-flag-map.svg" alt="Map of Kuwait Areas We Serve"
+                            class="w-full h-auto max-h-[250px] object-contain rounded-xl shadow-sm border border-gray-200" />
+                    </div>
+
+                    <!-- THE LOCATIONS -->
+                    <div class="flex flex-col w-full">
+                        <!-- Category 1 -->
+                        <div class="py-4 border-b border-gray-200">
+                            <h3 class="text-[#1D1D1F] font-bold text-lg mb-1" data-i18n="areas.col1_title">All
+                                Governorates</h3>
+                            <p class="text-gray-600" data-i18n="areas.col1_list">Al Asimah, Hawalli, Farwaniya, Ahmadi,
+                                Mubarak Al-Kabeer, Jahra.</p>
+                        </div>
+                        <!-- Category 2 -->
+                        <div class="py-4 border-b border-gray-200">
+                            <h3 class="text-[#1D1D1F] font-bold text-lg mb-1" data-i18n="areas.col2_title">Key & Remote
+                                Areas</h3>
+                            <p class="text-gray-600" data-i18n="areas.col2_list">Shuwaikh Industrial, Al Rai, Salmiya,
+                                Al Wafrah, Al Khiran, Abdali.</p>
+                        </div>
+                        <!-- Category 3 -->
+                        <div class="py-4 mt-1">
+                            <h3 class="text-[#1D1D1F] font-bold text-lg mb-1" data-i18n="areas.col3_title">Major
+                                Highways</h3>
+                            <p class="text-gray-600" data-i18n="areas.col3_list">King Fahd Road (Route 40), 6th Ring
+                                Road, 5th Ring Road, Fahaheel Expressway.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="bg-white">
+        <div class="container">
+            <div class="story-grid">
+                <!-- Left Side: Text Block -->
+                <div class="story-text">
+                    <span class="eyebrow" data-i18n="story.eyebrow">OUR STORY</span>
+                    <h2 class="section-title text-left" data-i18n="story.heading">Redefining Roadside Assistance in
+                        Kuwait.</h2>
+                    <p data-i18n="story.p1">Founded in 2021, My Sayartee was built on a simple premise: premium
+                        automotive care should come to you. Operating from the Shuwaikh Industrial Area, we replaced the
+                        traditional waiting room with a 24/7, GPS-enabled mobile fleet.</p>
+                    <p data-i18n="story.p2">But we believe a business is only as strong as its community. That is why we
+                        are immensely proud to provide completely free roadside services to people with disabilities
+                        across Kuwait. It is not just about fixing cars; it is about keeping our community moving
+                        safely.</p>
+                </div>
+
+                <!-- Right Side: Trust Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-val" data-i18n="story.stats.established.val">2021</div>
+                        <div class="stat-label" data-i18n="story.stats.established.label">Year Established</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val" data-i18n="story.stats.dispatch.val">24/7</div>
+                        <div class="stat-label" data-i18n="story.stats.dispatch.label">Emergency Dispatch</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val text-red" data-i18n="story.stats.rating.val">4.8/5</div>
+                        <div class="stat-label" data-i18n="story.stats.rating.label">Customer Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-val" data-i18n="story.stats.free.val">100%</div>
+                        <div class="stat-label" data-i18n="story.stats.free.label">Free for Special Needs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-white">
+        <div class="container">
+            <div class="faq-header text-center">
+                <span class="eyebrow" data-i18n="faq.eyebrow">EXPERT AUTO ADVICE</span>
+                <h2 class="section-title" data-i18n="faq.heading">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <!-- Q1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q1">Do you provide on-site car battery replacement in Kuwait?</span>
+                        <div class="faq-icon">
+                            <span class="faq-icon-line vertical"></span>
+                            <span class="faq-icon-line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq.a1">
+                            Yes. If your vehicle won't start, our mobile technicians will come directly to your location
+                            to perform a comprehensive voltage diagnostic. If a replacement is needed, we provide
+                            immediate, on-site installation with a battery of your choice to get you back on the road
+                            safely and quickly.
+                        </div>
+                    </div>
+                </div>
+                <!-- Q2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q2">Do you provide mobile auto electrician services in Kuwait?</span>
+                        <div class="faq-icon">
+                            <span class="faq-icon-line vertical"></span>
+                            <span class="faq-icon-line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq.a2">
+                            Yes. Our specialized mobile auto electricians come directly to your location fully equipped
+                            with advanced diagnostic technology. We handle the precise diagnosis and repair of both
+                            complex electrical systems and related mechanical faults, bringing expert, dealership-level
+                            care straight to your driveway so you never have to wait in a workshop.
+                        </div>
+                    </div>
+                </div>
+                <!-- Q3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q3">Do you provide mobile car AC repair across all cities in Kuwait?</span>
+                        <div class="faq-icon">
+                            <span class="faq-icon-line vertical"></span>
+                            <span class="faq-icon-line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq.a3">
+                            Yes. Beating the Kuwait heat is essential. Our expert car AC technicians are fully equipped
+                            to serve you anywhere across all governorates and cities. Whether you need a quick Freon
+                            recharge, leak detection, or a complete compressor repair, we bring premium cooling
+                            solutions directly to your driveway so you never have to sweat a breakdown.
+                        </div>
+                    </div>
+                </div>
+                <!-- Q4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q4">Do you provide mobile engine oil and filter changes in Kuwait?</span>
+                        <div class="faq-icon">
+                            <span class="faq-icon-line vertical"></span>
+                            <span class="faq-icon-line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq.a4">
+                            Yes. Skip the waiting room entirely with our premium on-site oil and filter change service.
+                            Our technicians arrive at your exact location fully equipped to safely drain your old oil,
+                            replace the filter, and refill your engine with top-tier lubricants—bringing a clean,
+                            professional workshop experience directly to your driveway.
+                        </div>
+                    </div>
+                </div>
+                <!-- Q5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q5">Do you provide mobile brake pad replacement and inspection in
+                            Kuwait?</span>
+                        <div class="faq-icon">
+                            <span class="faq-icon-line vertical"></span>
+                            <span class="faq-icon-line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq.a5">
+                            Yes. Squeaking or grinding brakes are a serious safety hazard. Our mobile technicians come
+                            directly to your location to perform a comprehensive inspection of your braking system. If a
+                            replacement is needed, we provide professional, on-site installation of high-quality brake
+                            pads, ensuring your vehicle stops safely without you ever having to wait at a repair shop.
+                        </div>
+                    </div>
+                </div>
+                <!-- Q6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q6">Do you provide mobile tire replacement services at my doorstep in
+                            Kuwait?</span>
+                        <div class="faq-icon">
+                            <span class="faq-icon-line vertical"></span>
+                            <span class="faq-icon-line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq.a6">
+                            Yes. Whether you are dealing with a sudden flat or need a completely new set of tires, our
+                            mobile units come directly to your doorstep anywhere in Kuwait. Our technicians arrive fully
+                            equipped to perform professional patching, balancing, or full tire replacements on-site,
+                            saving you the time and hassle of visiting a traditional workshop.
+                        </div>
+                    </div>
+                </div>
+                <!-- Q7 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q7">Do you provide immediate roadside emergency assistance in
+                            Kuwait?</span>
+                        <div class="faq-icon">
+                            <span class="faq-icon-line vertical"></span>
+                            <span class="faq-icon-line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq.a7">
+                            Yes. We understand that breakdowns don't happen on a schedule. Our mobile units are on
+                            standby 24/7 to provide rapid, reliable roadside assistance across all of Kuwait. Whether
+                            you are dealing with a dead battery, a flat tire, or are stranded on empty, our expert
+                            technicians are dispatched immediately to get you moving again.
+                        </div>
+                    </div>
+                </div>
+                <!-- Q8 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q8">Do you provide mobile hydraulic power steering repair in Kuwait?</span>
+                        <div class="faq-icon">
+                            <span class="faq-icon-line vertical"></span>
+                            <span class="faq-icon-line horizontal"></span>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq.a8">
+                            Yes. A stiff steering wheel or leaking fluid can make driving unsafe. Our mobile technicians
+                            come directly to your location, fully equipped with the latest diagnostic technologies to
+                            accurately identify and resolve hydraulic power steering faults. We perform precise, on-site
+                            repairs to restore your vehicle's smooth handling without the need for a tow to the
+                            workshop.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Index Section -->
+    <section id="blogs" class="bg-[#FFFFFF] py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- 1. Page Header Section -->
+            <div class="text-center mb-16 pt-8">
+                <span class="eyebrow mx-auto" data-i18n="blogs.eyebrow">EXPERT INSIGHTS</span>
+                <h2 class="text-[#1D1D1F] text-5xl md:text-6xl font-bold leading-tight mb-6"
+                    data-i18n="blogs.main_title">The Sayartee Journal</h2>
+                <p class="text-gray-500 text-xl max-w-2xl mx-auto" data-i18n="blogs.subtitle">Tips, guides, and news for
+                    keeping your car running perfectly in Kuwait.</p>
+            </div>
+
+            <!-- 2. Featured Post Section -->
+            <div
+                class="bg-gray-50 rounded-3xl overflow-hidden flex flex-col md:flex-row mb-20 group cursor-pointer border border-gray-100 transition-shadow hover:shadow-lg">
+                <!-- Left: Image -->
+                <div class="md:w-1/2 h-64 md:h-auto shrink-0 relative overflow-hidden">
+                    <img src="C:\Users\murtaza.pathan\Documents\myseyarti\blog images/How to Protect Your Car Battery from Kuwait's Summer Heat/fi-How to Protect Your Car Battery from Kuwait's Summer Heat.webp"
+                        alt="How to Protect Your Car Battery from Kuwait's Summer Heat"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <!-- Right: Content -->
+                <div
+                    class="md:w-1/2 p-8 md:p-14 flex flex-col justify-center items-start text-left rtl:text-right bg-gray-50">
+                    <span class="text-[#D92128] font-bold text-sm tracking-wide uppercase mb-4 block"
+                        data-i18n="blogs.featured.tag">MAINTENANCE</span>
+                    <h3 class="text-[#1D1D1F] text-3xl md:text-5xl font-bold mb-4 leading-tight group-hover:text-[#D92128] transition-colors"
+                        data-i18n="blogs.featured.title">How to Protect Your Car Battery from Kuwait's Summer Heat.</h3>
+                    <p class="text-gray-500 text-lg mb-8 leading-relaxed" data-i18n="blogs.featured.excerpt">Extreme
+                        temperatures can kill a battery fast. Learn the top three signs your battery is failing before
+                        you get stranded.</p>
+                    <a href="#"
+                        class="text-[#1D1D1F] font-bold text-lg inline-flex items-center group-hover:text-[#D92128] transition-colors">
+                        <span data-i18n="blogs.featured.link">Read Article</span>
+                        <span
+                            class="ml-2 rtl:mr-2 rtl:ml-0 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 inline-block mt-0.5">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="rtl:rotate-180">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. Recent Posts Section -->
+            <div class="mb-10 text-left rtl:text-right">
+                <h3 class="text-[#1D1D1F] text-2xl md:text-3xl font-bold" data-i18n="blogs.recent.heading">Latest
+                    Articles</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Post Card 1 -->
+                <a href="#" class="flex flex-col group cursor-pointer text-left rtl:text-right">
+                    <div class="w-full h-56 md:h-64 rounded-2xl overflow-hidden mb-6 bg-gray-100">
+                        <img src="C:\Users\murtaza.pathan\Documents\myseyarti\blog images\Why Your Car AC Smells Bad and How to Fix It.webp"
+                            alt="AC Content"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <span class="text-[#D92128] font-bold text-xs tracking-wider uppercase mb-3"
+                        data-i18n="blogs.post1.tag">AIR CONDITIONING</span>
+                    <h4 class="text-[#1D1D1F] text-2xl font-bold mb-3 leading-snug group-hover:text-[#D92128] transition-colors"
+                        data-i18n="blogs.post1.title">Why Your Car AC Smells Bad and How to Fix It.</h4>
+                    <p class="text-gray-500 text-base leading-relaxed mb-4 line-clamp-3"
+                        data-i18n="blogs.post1.excerpt">Don't ignore weird odors coming from your vents. Discover the
+                        common causes of AC smells and how our mobile technicians fix them fast.</p>
+                </a>
+
+                <!-- Post Card 2 -->
+                <a href="#" class="flex flex-col group cursor-pointer text-left rtl:text-right">
+                    <div class="w-full h-56 md:h-64 rounded-2xl overflow-hidden mb-6 bg-gray-100">
+                        <img src="C:\Users\murtaza.pathan\Documents\myseyarti\blog images\The Truth About Synthetic vs. Conventional Oil.webp
+                        " alt="Oil Change"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <span class="text-[#D92128] font-bold text-xs tracking-wider uppercase mb-3"
+                        data-i18n="blogs.post2.tag">ENGINE CARE</span>
+                    <h4 class="text-[#1D1D1F] text-2xl font-bold mb-3 leading-snug group-hover:text-[#D92128] transition-colors"
+                        data-i18n="blogs.post2.title">The Truth About Synthetic vs. Conventional Oil.</h4>
+                    <p class="text-gray-500 text-base leading-relaxed mb-4 line-clamp-3"
+                        data-i18n="blogs.post2.excerpt">Is synthetic oil really worth the extra cost for driving in
+                        Kuwait? We break down the differences to help you protect your engine.</p>
+                </a>
+
+                <!-- Post Card 3 -->
+                <a href="#" class="flex flex-col group cursor-pointer text-left rtl:text-right">
+                    <div class="w-full h-56 md:h-64 rounded-2xl overflow-hidden mb-6 bg-gray-100">
+                        <img src="C:\Users\murtaza.pathan\Documents\myseyarti\blog images\How Often Should You Rotate Your Tires.webp
+                        " alt="Tire Maintenance"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <span class="text-[#D92128] font-bold text-xs tracking-wider uppercase mb-3"
+                        data-i18n="blogs.post3.tag">SAFETY</span>
+                    <h4 class="text-[#1D1D1F] text-2xl font-bold mb-3 leading-snug group-hover:text-[#D92128] transition-colors"
+                        data-i18n="blogs.post3.title">How Often Should You Rotate Your Tires?</h4>
+                    <p class="text-gray-500 text-base leading-relaxed mb-4 line-clamp-3"
+                        data-i18n="blogs.post3.excerpt">Maximize your tire lifespan and maintain optimal traction. Here
+                        is the ultimate guide to tire rotation schedules for typical commuters.</p>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-light">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="testimonials.main_title">4.8/5 Stars from 1,400+ Reviews</h2>
+            <p class="section-subtitle" data-i18n="testimonials.main_subtitle">Don't just take our word for it—see what
+                our satisfied customers have to say.</p>
+
+            <div class="grid-testimonials">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div>
+                        <div class="testimonial-stars">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonials.review1">"Absolutely seamless experience.
+                            The app interface is clean, and the mechanic arrived within 20 minutes to fix my flat tire."
+                        </p>
+                    </div>
+                    <p class="testimonial-author" data-i18n="testimonials.author1">Fahad Al-Rashid</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div>
+                        <div class="testimonial-stars">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonials.review2">"My battery died at work. My
+                            Sayartee replaced it before my meeting finished. Premium service all around."</p>
+                    </div>
+                    <p class="testimonial-author" data-i18n="testimonials.author2">Sarah M.</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div>
+                        <div class="testimonial-stars">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonials.review3">"The most professional team in
+                            Kuwait. High-quality tools, transparent pricing, and Apple-level UX."</p>
+                    </div>
+                    <p class="testimonial-author" data-i18n="testimonials.author3">Yousef K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Marquee Section -->
+    <section id="brands" class="bg-white" style="padding-top: 4rem; padding-bottom: 2rem; overflow: hidden;">
+        <div class="container text-center">
+            <span class="eyebrow">PREMIUM BRANDS & PARTNERS</span>
+        </div>
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <!-- Set 1 -->
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="28" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="1">MICHELIN</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="20" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="0">AL MAILAM TIRES</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="24" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="1">BRIDGESTONE</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="28" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="3">PIRELLI</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="28" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="1">AMARON</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="22" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="1">MOTORCRAFT</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="24" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="2">MOTO RAFT</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="16" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="0">NEETO INTERNATIONAL</text></svg></div>
+                <!-- Set 2 for infinite scroll -->
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="28" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="1">MICHELIN</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="20" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="0">AL MAILAM TIRES</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="24" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="1">BRIDGESTONE</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="28" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="3">PIRELLI</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="28" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="1">AMARON</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="22" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="1">MOTORCRAFT</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="24" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="2">MOTO RAFT</text></svg></div>
+                <div class="brand-logo"><svg viewBox="0 0 200 60"><text x="50%" y="50%" fill="#1D1D1F"
+                            font-family="'Inter', sans-serif" font-weight="800" font-size="16" text-anchor="middle"
+                            dominant-baseline="middle" letter-spacing="0">NEETO INTERNATIONAL</text></svg></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="footer-top">
+                <div class="logo" style="justify-content: center;">
+                    <img src="mysayartee mobile car service logo.jpeg" alt="mysayartee mobile car service logo">
+                    My Sayartee
+                </div>
+                <div class="footer-info">
+                    <p><span data-i18n="footer.email_label">Email:</span> <a
+                            href="mailto:info@my-sayartee.com">info@my-sayartee.com</a></p>
+                    <p><span data-i18n="footer.phone_label">Phone:</span> <a href="tel:+96560992569">+965 6099 2569</a>
+                    </p>
+                    <p data-i18n="footer.location">Location: Shuwaikh Industrial Area 2, Kuwait</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 My Sayartee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/96560992569" target="_blank" rel="noopener noreferrer" class="wa-widget"
+        aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+            </path>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="app.js?v=2"></script>
+</body>
+
+</html>
